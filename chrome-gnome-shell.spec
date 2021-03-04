@@ -2,7 +2,7 @@ Summary:	GNOME Shell integration for Chrome
 Summary(pl.UTF-8):	Integracja GNOME Shell dla Chrome'a
 Name:		chrome-gnome-shell
 Version:	10.1
-Release:	1
+Release:	2
 License:	GPL v3+
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/chrome-gnome-shell/10.1/%{name}-%{version}.tar.xz
@@ -20,6 +20,8 @@ BuildRequires:	xz
 Requires:	gnome-shell >= 3.22
 Requires:	python3-modules >= 1:3.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%define		_enable_debug_packages	0
 
 %description
 This package contains Browser extension for Google Chrome/Chromium,
