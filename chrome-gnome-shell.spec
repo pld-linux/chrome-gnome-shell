@@ -63,7 +63,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc NEWS README.md
 %attr(755,root,root) %{_bindir}/chrome-gnome-shell
-%{py3_sitedir}/chrome_gnome_shell-0.0.0-py*.egg-info
+%{py3_sitescriptdir}/chrome_gnome_shell-0.0.0-py*.egg-info
 %{_datadir}/dbus-1/services/org.gnome.ChromeGnomeShell.service
 %{_desktopdir}/org.gnome.ChromeGnomeShell.desktop
 %{_iconsdir}/hicolor/*x*/apps/org.gnome.ChromeGnomeShell.png
