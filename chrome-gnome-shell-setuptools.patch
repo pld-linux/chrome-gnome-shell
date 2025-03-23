@@ -1,0 +1,9 @@
+--- chrome-gnome-shell-10.1/connector/setup.py.orig	2018-03-21 07:10:51.000000000 +0100
++++ chrome-gnome-shell-10.1/connector/setup.py	2025-03-23 15:58:04.326184531 +0100
+@@ -17,5 +17,6 @@ setup(
+     description='Provides integration with GNOME Shell extensions repository for Chrome browser',
+     author='Yuri Konotopov',
+     url='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome',
++    packages=[],
+     scripts=[SCRIPT_PATH]
+ )

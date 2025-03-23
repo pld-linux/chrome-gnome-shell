@@ -2,11 +2,12 @@ Summary:	GNOME Shell integration for Chrome
 Summary(pl.UTF-8):	Integracja GNOME Shell dla Chrome'a
 Name:		chrome-gnome-shell
 Version:	10.1
-Release:	6
+Release:	7
 License:	GPL v3+
 Group:		X11/Applications
 Source0:	https://download.gnome.org/sources/chrome-gnome-shell/10.1/%{name}-%{version}.tar.xz
 # Source0-md5:	11dd4c539fefff7153b4f0af8e6e4a71
+Patch0:		%{name}-setuptools.patch
 URL:		https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome
 BuildRequires:	cmake >= 2.8
 # base64, sha256sum
@@ -15,6 +16,7 @@ BuildRequires:	gettext-tools
 BuildRequires:	jq
 BuildRequires:	p7zip
 BuildRequires:	python3 >= 1:3.2
+BuildRequires:	python3-setuptools
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
 Requires:	gnome-shell >= 3.22
@@ -39,6 +41,7 @@ oraz jej repozytorium rozszerzeń (https://extensions.gnome.org/).
 
 %prep
 %setup -q
+%patch -P0 -p1
 
 %build
 install -d build
