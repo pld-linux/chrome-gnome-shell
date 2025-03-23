@@ -5,7 +5,7 @@ Version:	10.1
 Release:	6
 License:	GPL v3+
 Group:		X11/Applications
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/chrome-gnome-shell/10.1/%{name}-%{version}.tar.xz
+Source0:	https://download.gnome.org/sources/chrome-gnome-shell/10.1/%{name}-%{version}.tar.xz
 # Source0-md5:	11dd4c539fefff7153b4f0af8e6e4a71
 URL:		https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome
 BuildRequires:	cmake >= 2.8
